@@ -1,0 +1,18 @@
+## Package manager stuff
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+
+## Modules dependencies
+node_modules/
+
+## Build
+.dist/
+
+# Testing
+coverage/
+
+# Hello, Webstorm
+.idea/

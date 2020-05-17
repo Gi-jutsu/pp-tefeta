@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  tefeta:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ../
+    image: gijutsu/tefeta
+    container_name: tefeta

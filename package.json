@@ -1,0 +1,37 @@
+{
+  "name": "Typescript-Template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Gi-jutsu/Typescript-Template.git",
+  "author": "Dylan DE SOUSA <dds1991@hotmail.fr>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn nodemon",
+    "test": "yarn test:static",
+    "test:static": "yarn tsc",
+    "clean": "yarn rimraf .dist",
+    "lint": "eslint \"*.ts\" --fix",
+    "format": "yarn prettier --write \"src/**/*\" --loglevel silent",
+    "build": "yarn clean && yarn babel src/ --out-dir .dist/ --extensions \".ts\" --source-maps inline --quiet --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "@types/lodash": "^4.14.151",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
